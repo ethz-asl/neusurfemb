@@ -1,0 +1,10 @@
+__pycache__/
+build/
+*.egg-info/
+*.so
+wandb/
+*.pt
+experiments/
+tests/
+third_party/bag_to_rgbd_dataset_ws/
+copies/

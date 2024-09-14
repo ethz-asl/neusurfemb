@@ -1,0 +1,7 @@
+intrinsics_path: "intrinsics.txt"
+model_path: "checkpoints/surfemb/your_model-modelhash.ckpt"
+object_model_folder: "data_for_surfemb"
+neus2_checkpoint_folders:
+  - "/home/data/trainings/YOUR_MODEL/checkpoints/"
+renderer_type: "neus2_online"
+use_normals_criterion: "true"

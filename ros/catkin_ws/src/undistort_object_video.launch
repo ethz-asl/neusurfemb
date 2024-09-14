@@ -1,0 +1,40 @@
+<launch>
+
+<arg name="input_camera_name" default="camera" />
+<arg name="scale" default="1.0" />
+<arg name="bag_path" />
+<arg name="output_path" />
+
+  <node name="image_undistort_node" pkg="image_undistort" type="image_undistort_node">
+    <param name="input_camera_namespace" value="camera"/>      
+    <param name="input_camera_info_from_ros_params" value = "false"/>    
+    <param name="scale" value="$(arg scale)"/>
+    <param name="output_camera_info_source" value="auto_generated"/>
+    <param name="output_image_type" value="bgr8"/>
+
+    <remap from="input/image" to="$(arg input_camera_name)/image_raw"/>
+    <remap from="input/camera_info" to="$(arg input_camera_name)/camera_info"/>
+  </node>
+
+  <node name="rosbag_player"
+        pkg="rosbag"
+        type="play"
+        args="$(arg bag_path)"
+        required="true"
+    />
+
+    <node name="rosbag_recorder"
+        pkg="rosbag"
+        type="record"
+        args="-o $(arg output_path)
+        /camera/camera_info
+        /camera/image_raw
+        /clock
+        /output/image
+        /output/camera_info
+        /tf
+        /tf_static
+        /rosout
+        /rosout_agg"
+    />
+</launch>

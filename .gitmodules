@@ -1,0 +1,31 @@
+[submodule "third_party/surfemb"]
+	path = third_party/surfemb
+	url = https://github.com/ethz-asl/surfemb.git
+[submodule "third_party/NeuS2"]
+	path = third_party/NeuS2
+	url = https://github.com/ethz-asl/NeuS2.git
+[submodule "third_party/cgal"]
+	path = third_party/cgal
+	url = https://github.com/CGAL/cgal.git
+	branch = 5.5.x-branch
+[submodule "third_party/Hierarchical-Localization"]
+	path = third_party/Hierarchical-Localization
+	url = https://github.com/cvg/Hierarchical-Localization.git
+[submodule "third_party/segment-anything"]
+	path = third_party/segment-anything
+	url = https://github.com/facebookresearch/segment-anything.git
+[submodule "third_party/bop_toolkit"]
+	path = third_party/bop_toolkit
+	url = https://github.com/ethz-asl/bop_toolkit.git
+[submodule "third_party/mmtracking"]
+	path = third_party/mmtracking
+	url = https://github.com/open-mmlab/mmtracking.git
+[submodule "ros/catkin_ws/src/kalibr"]
+	path = ros/catkin_ws/src/kalibr
+	url = https://github.com/harmony-eu/kalibr.git
+[submodule "ros/catkin_ws/src/catkin_simple"]
+	path = ros/catkin_ws/src/catkin_simple
+	url = https://github.com/catkin/catkin_simple
+[submodule "ros/catkin_ws/src/image_undistort"]
+	path = ros/catkin_ws/src/image_undistort
+	url = https://github.com/ethz-asl/image_undistort.git

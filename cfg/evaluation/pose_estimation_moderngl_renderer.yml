@@ -1,0 +1,5 @@
+intrinsics_path: "intrinsics.txt"
+model_path: "checkpoints/surfemb/your_model-modelhash.ckpt"
+object_model_folder: "data_for_surfemb"
+renderer_type: "moderngl"
+use_normals_criterion: "true"

@@ -1,0 +1,8 @@
+elevation_max: 80
+elevation_min: 0
+num_views: 5
+fraction_obj_pixels_max_radius: 0.03
+fraction_obj_pixels_min_radius: 0.12
+crop_res: 224
+crop_scale_factor: 1.5
+in_plane_rotation_max_degrees: 30
